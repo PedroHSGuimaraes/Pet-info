@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/globalStyles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
+
+
+
+  <title>Home</title>
+</head>
+
+<body>
+  <main>
+    <section class="logo__container--login">
+      <div class="logo--login">
+        <h2>Petinfo</h2>
+        <h3> <span> Amor</span> e <span>carinho</span> por meio do conhecimento</h3>
+        <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+      </div>
+
+      <div class="img__container--login">
+        <img src="./src/assets/login/gatohome1.svg" alt="gato1">
+        <img src="./src/assets/login/doghome1.svg" alt="dog">
+        <img class="gato2" src="./src/assets/login/gatohome2.svg" alt="gato2">
+      </div>
+
+      <div class="img__container--login2">
+        <img src="./src/assets/login/doghome2.svg" alt="dog2">
+      </div>
+
+    </section>
+
+
+    <section class="login__conteiner">
+      <h1>Login</h1>
+      <form>
+        <label for="email">Email</label>
+        <input class="input__login" type="email" name="email" id="email " placeholder="Digite seu email">
+        <label for="password">Senha</label>
+        <input class="input__login" type="password" name="password" id="password" placeholder="Digite sua senha">
+        <button class="button__login">Acessar</button>
+      </form>
+
+      <div class="cadastro__home">
+        <h4>Ainda não possui conta?</h4>
+        <p class=" text">Clicando no botão abaixo, você pode se cadastrar rapidamente</p>.
+        <button class="button__cadastro--page">Cadastrar</button>
+      </div>
+
+    </section>
+    <section id="spinnerProfile"></section>
+  </main>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./src/script/index.js" type="module"></script>
+</body>
+
+</html>

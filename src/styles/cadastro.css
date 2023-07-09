@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+main {
+  display: grid;
+  margin-top: 9.25rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.875rem;
+  margin-left: 12.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 150%;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray100);
+}
+
+h2 {
+  color: #212529;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+h3 {
+  color: #364fc7;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+input {
+  display: flex;
+  width: 20.0625rem;
+  height: 2.75rem;
+  padding: 0rem 1rem;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #e9ecef;
+  background: #f8f9fa;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:hover,
+input:focus {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.cadastro__conteiner {
+  display: flex;
+  width: 26.3125rem;
+  height: 39.125rem;
+  padding: 2.75rem 1.5rem;
+  flex-direction: column;
+  gap: 1.625rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #d9d9d9;
+  background: #fcfeff;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+}
+
+::placeholder {
+  color: #868e96;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.button__cadastro {
+  display: flex;
+  height: 2.375rem;
+  padding: 0rem 1rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #364fc7;
+  background: #364fc7;
+  color: #fcfeff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.button__cadastro:hover,
+.button__cadastro:focus {
+  background: #2d3e9f;
+  border-color: #2d3e9f;
+  transform: translateY(-0.125rem);
+}
+
+#voltar {
+  display: flex;
+  height: 2.375rem;
+  padding: 0rem 1rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #e9ecef;
+  color: #767e86;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+#voltar:hover,
+#voltar:focus {
+  background: #f8f9fa;
+  transform: translateY(-0.125rem);
+}
+
+.logo {
+  display: flex;
+  gap: 1.875rem;
+  flex-direction: column;
+}
+
+.logo__container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 26.1875rem;
+}
+
+.img__container {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.img__container2 {
+  display: flex;
+  position: relative;
+  top: -2.875rem;
+  left: 6.1875rem;
+}
+
+.gato1 {
+  position: relative;
+  top: 3.0625rem;
+}
+
+p {
+  color: #495057;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media (max-width: 48rem) {
+  main {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+  <title>Pet info</title>
+</head>
+
+<body>
+  <header class="header__container">
+    <div class="header__logo">
+      <h1>Petinfo</h1>
+      <button class="postModal__button" id="open-modal">Criar publicação</button>
+      <h2 class="profile__username"></h2>
+      <img class="profile__avatar" src="" alt="">
+      <button class="logout">Sair</button>
+    </div>
+
+  </header>
+
+
+  <main>
+    <section class="feed">
+      <h2>Feed</h2>
+    </section>
+
+
+    <section class="main__list">
+      <ul class="listPost__container">
+
+      </ul>
+
+
+      <ul class="ul__profile">
+        <li class=".listPost__cardProfiles">
+          <h2 class="listPost__card__titleProfiles">Quando levar o pet ao médico-veterinário?</h2>
+          <p class="listPost__card__textProfiles">Pelagem bonita e brilhante, pele saudável, além de fezes firmes e odor reduzido são alguns sinais associados pelos tutores de que seus pets estão bem...</p>
+          <h3 class="listPost__card__nameProfiles">Rafael Bertoldo</h3>
+          <img class="listPost__card__avatarProfiles" src="../assets/profile/Ellipse 2.png">
+        </li>
+
+
+      </ul>
+
+    </section>
+
+
+    <dialog class="modal__controller--post">
+      <section class="post_modal__container">
+        <div class="post_modal__title--container">
+
+          <h2>Criando um novo post</h2>
+        </div>
+
+        <form class="post_modal__form">
+          <button id="closeModalButton">
+            X
+          </button>
+          <div class="title__container">
+            <label class="postTitle1" for="#postTitle">Título do post</label>
+            <input class="add__inputTitle create__post" id="postTitle" type="text" name="title" placeholder="Digite o titulo aqui..." />
+          </div>
+
+          <div class="post__container">
+            <label class="conteudo" for="#postDescription">Conteúdo do post</label>
+            <textarea class="add__inputPost create__post" name="content" id="postContent" placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+
+          </div>
+
+          <button class="addPostSubmit--post" id="addPostSubmit" type="submit">Postar</button>
+          <button class="cancelButton">Cancelar</button>
+        </form>
+      </section>
+    </dialog>
+
+
+
+
+    <dialog class="modal__controller--edit">
+      <section class="edit_modal__container">
+        <div class="edit_modal__title--container">
+          <h2>Editar post</h2>
+        </div>
+        <form class="post_modal__form post_modal__edit">
+          <button id="closeModalButton">
+            X
+          </button>
+          <div class="edit_title__container">
+
+            <label for="#titleEdit">Título do post</label>
+            <input class="add__inputs edit__inputTitle " id="titleEdit" type="text" name="title" placeholder="Digite o titulo aqui..." />
+          </div>
+
+          <div class="editPost__container">
+
+            <label for="#postDescription">Conteúdo do post</label>
+            <textarea class="add__inputs creatEditPostIput" name="content" id="descriptionEdit" placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+
+
+            <button class="postSubmitEditClass" id="postSubmitEdit" type="submit">Salva Alterações</button>
+            <button class="cancelButton">Cancelar</button>
+          </div>
+        </form>
+      </section>
+
+
+    </dialog>
+
+
+
+
+    <dialog class="modal__controller--user" id="modal">
+      <section class="modal">
+
+        <h2 class="modalTitle" id="modalTitle"></h2>
+        <img class="img__modal__post" src="" alt="">
+        <p class="modalContentText" id="modalContentText"></p>
+        <button class="modalCloseButton1" id="modalCloseButton1">X</button>
+      </section>
+    </dialog>
+
+
+
+  </main>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="../script/deshboard.js " type="module"></script>
+
+</body>
+
+</html>

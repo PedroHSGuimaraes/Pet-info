@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap");
+
+:root {
+  --color-primary: #364fc7;
+  --color-secondary: #3b56d9;
+  --color-text: #212529;
+  --color-border: #d9d9d9;
+  --color-background: #ffffff;
+  --color-button-hover: #283ea5;
+  --color-input-border: #d9d9d9;
+  --color-input-background: #ffffff;
+  --color-input-hover: #f5f5f5;
+}
+.modal__controller--post {
+  background: var(--color-background);
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  animation: modalOpenAnimation 0.5s ease;
+}
+
+@keyframes modalOpenAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post_modal__container {
+  display: flex;
+  flex-direction: column;
+  width: 48rem;
+  height: 25.625rem;
+  gap: 0px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.add__inputTitle {
+  display: flex;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-input-border);
+  width: 46rem;
+  height: 2rem;
+  color: var(--color-text);
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background: var(--color-input-background);
+}
+
+.add__inputTitle:hover {
+  background: var(--color-input-hover);
+}
+
+.add__inputPost {
+  width: 46rem;
+  height: 8rem;
+  resize: none;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-input-border);
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background: var(--color-input-background);
+}
+
+.add__inputPost:hover {
+  background: var(--color-input-hover);
+}
+
+.post_modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#closeModalButton {
+  position: relative;
+  left: 700px;
+  top: -20px;
+  height: 32px;
+  width: 32px;
+  display: inline-flex;
+  padding: 4px 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #e9ecef;
+  border: 2px solid #eaecee;
+  cursor: pointer;
+}
+
+#closeModalButton:hover {
+  background: var(--color-secondary);
+  color: #d9d9d9;
+  border: 2px var(--color-button-hover);
+}
+
+.addPostSubmit--post {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 632px;
+  padding: 7px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  width: 108px;
+  height: 38px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 2px solid #3b56d9;
+  background: #364fc7;
+  cursor: pointer;
+}
+
+.addPostSubmit--post:hover {
+  background: var(--color-button-hover);
+}
+
+.cancelButton {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 496px;
+  top: -58px;
+  padding: 7px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  width: 108px;
+  height: 38px;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #e9ecef;
+  color: #495057;
+  border: 2px solid #e9ecef;
+  cursor: pointer;
+}
+.cancelButton:hover {
+  background: var(--color-button-hover);
+  color: #e9ecef;
+}
+.post__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postTitle1,
+.conteudo {
+  color: var(--color-text);
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.post_modal__title--container {
+  position: relative;
+  left: -6px;
+  top: 11px;
+  color: var(--color-text);
+  font-size: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.658);
+}
+.modal__controller--edit {
+  background: var(--color-background);
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  animation: modalOpenAnimation 0.5s ease;
+}
+.edit_modal__container {
+  display: flex;
+  flex-direction: column;
+  width: 48rem;
+  height: 25.625rem;
+  gap: 0px;
+  padding: 5px;
+  overflow: hidden;
+}
+.edit_modal__title--container {
+  position: relative;
+  left: -6px;
+  top: 11px;
+  color: var(--color-text);
+  font-size: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.edit_title__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.edit__inputTitle {
+  display: flex;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-input-border);
+  width: 46rem;
+  height: 2rem;
+  color: var(--color-text);
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background: var(--color-input-background);
+}
+.edit__inputTitle:hover {
+  background: var(--color-input-hover);
+}
+
+.editPost__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.creatEditPostIput {
+  width: 46rem;
+  height: 8rem;
+  resize: none;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-input-border);
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background: var(--color-input-background);
+  margin-bottom: 20px;
+}
+.creatEditPostIput:hover {
+  background: var(--color-input-hover);
+}
+
+.postSubmitEditClass {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 632px;
+  top: -10px;
+  padding: 7px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  width: 140px;
+  height: 38px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  border: 2px solid #3b56d9;
+  background: #364fc7;
+  cursor: pointer;
+}
+.postSubmitEditClass:hover {
+  background: var(--color-button-hover);
+}
+@media (max-width: 768px) {
+  .post_modal__container {
+    width: 90%;
+  }
+
+  .add__inputTitle {
+    width: 100%;
+  }
+
+  #closeModalButton {
+    top: 5px;
+    right: 5px;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 150%;
+  width: 800px;
+  height: 400px;
+  background: #ffffff;
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  padding: 20px;
+}
+.modalTitle {
+  position: relative;
+  top: -184px;
+  left: -3px;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray100);
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  color: #212529;
+  font-size: 32px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.modalContentText {
+  position: relative;
+  top: 14px;
+  left: 7px;
+
+  color: #495057;
+  font-size: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.modalCloseButton1 {
+  position: relative;
+  left: 721px;
+  top: -106px;
+  height: 32px;
+  width: 32px;
+  display: inline-flex;
+  padding: 4px 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #e9ecef;
+  border: 2px solid #eaecee;
+  cursor: pointer;
+  animation: modalOpenAnimation 0.8s ease;
+}
+
+.modalCloseButton1:hover {
+  background: var(--color-secondary);
+  color: #d9d9d9;
+  border: 2px var(--color-button-hover);
+}

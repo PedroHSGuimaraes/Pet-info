@@ -1,0 +1,415 @@
+body {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  z-index: 999;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+h1 {
+  position: relative;
+  top: 53px;
+  left: -221px;
+  color: #212529;
+
+  font-size: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+ul {
+  display: flex;
+  width: 900px;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray100) transparent;
+  flex-wrap: wrap;
+}
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: var(--gray100);
+  border-radius: 4px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ul li {
+  animation: fade-in 0.5s ease-in;
+}
+
+.feed {
+  width: 300%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #f8f9fa;
+  color: #212529;
+  font-size: 1.25rem;
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+}
+.header__logo {
+  display: flex;
+}
+.feed > h2 {
+  position: relative;
+  left: -372px;
+}
+.postModal__button {
+  display: flex;
+  position: relative;
+  left: 500px;
+  top: 81px;
+  padding: 7px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  width: 147px;
+  height: 38px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 2px solid #3b56d9;
+  background: #364fc7;
+  cursor: pointer;
+}
+
+.postModal__button:hover {
+  background: var(--color-button-hover);
+}
+
+.listPost__card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 150%;
+  width: 800px;
+  height: 270px;
+  background: #ffffff;
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  padding: 20px;
+}
+.listPost__card__title {
+  position: relative;
+  top: -190px;
+  left: 1px;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray100);
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  color: #212529;
+  font-size: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.listPost__card__text {
+  position: relative;
+  top: -54px;
+  left: 1px;
+  color: #495057;
+  font-size: 16px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.listPost__card__name {
+  position: relative;
+  top: -150px;
+  left: 57px;
+  color: #212529;
+  font-size: 14px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.listPost__card__avatar {
+  position: relative;
+  top: -99px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--gray100);
+}
+.listPost__card__button--edit {
+  display: flex;
+  position: relative;
+  left: 605px;
+  top: 153px;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9ecef;
+  background: var(--gray100);
+  width: 55px;
+  color: #212529;
+  font-size: 12px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.listPost__card__button--delete {
+  position: relative;
+  left: 680px;
+  top: 193px;
+  background: var(--gray100);
+  display: flex;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--grey-7, #f1f3f5);
+  background: var(--grey-7, #f1f3f5);
+  width: 55px;
+  color: var(--grey-4, #868e96);
+  font-size: 12px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.listPost__card__button--edit:hover {
+  background: var(--color-button-hover);
+  color: #e9ecef;
+}
+
+.listPost__card__button--delete:hover {
+  background: rgb(187, 7, 7);
+  color: #e9ecef;
+}
+
+.ul__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  overflow: hidden;
+  width: 800px;
+  height: 315px;
+  background: #ffffff;
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-content: center;
+  flex-wrap: wrap;
+
+  margin-left: 47px;
+}
+
+.listPost__card__titleProfiles {
+  position: relative;
+  top: 20px;
+  left: 13px;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray100);
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  color: #212529;
+  font-size: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.listPost__card__textProfiles {
+  position: relative;
+  top: 55px;
+  left: 15px;
+  color: #495057;
+  font-size: 16px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 760px;
+}
+
+.listPost__card__nameProfiles {
+  position: relative;
+  top: -123px;
+  left: 69px;
+  color: #212529;
+  font-size: 14px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.listPost__card__avatarProfiles {
+  position: relative;
+  top: -151px;
+  left: 16px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--gray100);
+}
+
+.profile__username {
+  position: relative;
+  top: 21px;
+  left: 406px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--gray100);
+  color: #212529;
+  font-size: 16px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.profile__avatar {
+  position: relative;
+  top: 14px;
+  left: 425px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--gray100);
+}
+
+.logout {
+  position: relative;
+  top: 79px;
+  left: 436px;
+  width: 4.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  background: var(--gray100);
+  color: #212529;
+  font-size: 16px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  cursor: pointer;
+  border: #868e96;
+}
+
+.logout:hover {
+  background: var(--color-button-hover);
+  color: #e9ecef;
+}
+.listPost__card__button--acess {
+  position: relative;
+  top: 234px;
+  left: -13px;
+  font-size: 13px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  cursor: pointer;
+  width: 127px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #e9ecef00;
+  color: #364fc7;
+}
+
+.listPost__card__button--acess:hover {
+  background: var(--color-button-hover);
+  color: #e9ecef;
+}
+
+.dateClass {
+  position: relative;
+  top: 115px;
+  left: 576px;
+  color: #495057;
+  font-size: 14px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 760px;
+}
+.img__modal__post {
+  position: relative;
+  top: -188px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

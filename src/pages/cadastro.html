@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/cadastro.css">
+
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <section class="cadastro__conteiner">
+
+      <h1>Cadastro</h1>
+      <form class="">
+        <label for="username">Usuário</label>
+        <input type="text" name="username" id="username" placeholder="Digite seu usuário aqui">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email aqui">
+        <label for="avatar">Link da foto do perfil</label>
+        <input type="text" name="avatar" id="avatar" placeholder="Insira o link aqui">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha aqui">
+        <button class="button__cadastro" id="cadastro">Cadastrar</button>
+        <button id="voltar">Voltar para o login</button>
+      </form>
+
+    </section>
+
+    <section class="logo__container">
+      <div class="logo">
+        <h2>Petinfo</h2>
+        <h3>Ooooooba!</h3>
+        <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+      </div>
+
+      <div class="img__container">
+        <img class="gato1" src="../assets/cadastro/gato1.svg" alt="gato1">
+        <img src="../assets/cadastro/gato2.svg" alt="gato2">
+        <img src="../assets/cadastro/dog.svg" alt="dog">
+      </div>
+
+      <div class="img__container2">
+        <img src="../assets/cadastro/gato3.svg" alt="gato3">
+      </div>
+    </section>
+    <section id="spinnerCadastro"></section>
+  </main>
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="../script/cadastro.js" type="module"></script>
+</body>
+
+</html>
